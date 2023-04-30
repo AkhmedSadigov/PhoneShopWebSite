@@ -1,0 +1,423 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B68CDE8E-CDF3-4E32-BD96-21952D624738}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhoneShopWebSite</RootNamespace>
+    <AssemblyName>PhoneShopWebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44353</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AddBrand.aspx" />
+    <Content Include="AddCategory.aspx" />
+    <Content Include="AddProduct.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Custome.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="icons\phoneShopIcon.png" />
+    <Content Include="Images\honor9x.jpg" />
+    <Content Include="Images\htcOneM9.jpg" />
+    <Content Include="Images\iphone14pmax.jpg" />
+    <Content Include="Images\iphoneX.jpg" />
+    <Content Include="Images\Noimg.png" />
+    <Content Include="Images\oppor4.jpg" />
+    <Content Include="Images\ProductImages\5\Iphone X01.jpg" />
+    <Content Include="Images\ProductImages\6\Xiaomi Redmi Note 10 Pro01.jpg" />
+    <Content Include="Images\ProductImages\honor50-silver.jpg" />
+    <Content Include="Images\ProductImages\iphone12.jpg" />
+    <Content Include="Images\ProductImages\xrn8.jpg" />
+    <Content Include="Images\redmiN10pro.jpg" />
+    <Content Include="Images\samg71.jpg" />
+    <Content Include="Images\sg21.jpg" />
+    <Content Include="Images\x11u.jpg" />
+    <Content Include="ImgSlider\iphone14.jpg" />
+    <Content Include="ImgSlider\s22.jpg" />
+    <Content Include="ImgSlider\x12.png" />
+    <Content Include="Products.aspx" />
+    <Content Include="ProductView.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="shape\about.html" />
+    <Content Include="shape\blog.html" />
+    <Content Include="shape\contact.html" />
+    <Content Include="shape\css\animate.css" />
+    <Content Include="shape\css\bootstrap.css" />
+    <Content Include="shape\css\flexslider.css" />
+    <Content Include="shape\css\icomoon.css" />
+    <Content Include="shape\css\magnific-popup.css" />
+    <Content Include="shape\css\style.css" />
+    <Content Include="shape\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="shape\fonts\icomoon\icomoon.svg" />
+    <Content Include="shape\images\cc.jpg" />
+    <Content Include="shape\images\img_bg_1.jpg" />
+    <Content Include="shape\images\loader.gif" />
+    <Content Include="shape\images\person1.jpg" />
+    <Content Include="shape\images\person2.jpg" />
+    <Content Include="shape\images\person3.jpg" />
+    <Content Include="shape\images\work-1.jpg" />
+    <Content Include="shape\images\work-2.jpg" />
+    <Content Include="shape\images\work-3.jpg" />
+    <Content Include="shape\images\work-4.jpg" />
+    <Content Include="shape\images\work-5.jpg" />
+    <Content Include="shape\images\work-6.jpg" />
+    <Content Include="shape\index.html" />
+    <Content Include="shape\js\bootstrap.min.js" />
+    <Content Include="shape\js\jquery.countTo.js" />
+    <Content Include="shape\js\jquery.easing.1.3.js" />
+    <Content Include="shape\js\jquery.magnific-popup.min.js" />
+    <Content Include="shape\js\jquery.min.js" />
+    <Content Include="shape\js\jquery.waypoints.min.js" />
+    <Content Include="shape\js\magnific-popup-options.js" />
+    <Content Include="shape\js\main.js" />
+    <Content Include="shape\js\modernizr-2.6.2.min.js" />
+    <Content Include="shape\js\respond.min.js" />
+    <Content Include="shape\README.txt" />
+    <Content Include="shape\services.html" />
+    <Content Include="shape\work.html" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddBrand.aspx.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBrand.aspx.designer.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMasterPage.master.cs">
+      <DependentUpon>AdminMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMasterPage.master.designer.cs">
+      <DependentUpon>AdminMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.master.cs">
+      <DependentUpon>User.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.master.designer.cs">
+      <DependentUpon>User.master</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="AdminMasterPage.master" />
+    <Content Include="Images\ProductImages\4\Iphone X01" />
+    <Content Include="Images\ProductImages\4\Iphone X02" />
+    <Content Include="Images\ProductImages\4\Iphone X03" />
+    <Content Include="Images\ProductImages\4\Iphone X04" />
+    <Content Include="Images\ProductImages\4\Iphone X05" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="User.master" />
+    <Content Include="shape\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="shape\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="shape\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="shape\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="shape\fonts\icomoon\icomoon.eot" />
+    <Content Include="shape\fonts\icomoon\icomoon.ttf" />
+    <Content Include="shape\fonts\icomoon\icomoon.woff" />
+    <Content Include="shape\sass\bootstrap.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="shape\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="shape\sass\bootstrap\_alerts.scss" />
+    <Content Include="shape\sass\bootstrap\_badges.scss" />
+    <Content Include="shape\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="shape\sass\bootstrap\_button-groups.scss" />
+    <Content Include="shape\sass\bootstrap\_buttons.scss" />
+    <Content Include="shape\sass\bootstrap\_carousel.scss" />
+    <Content Include="shape\sass\bootstrap\_close.scss" />
+    <Content Include="shape\sass\bootstrap\_code.scss" />
+    <Content Include="shape\sass\bootstrap\_component-animations.scss" />
+    <Content Include="shape\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="shape\sass\bootstrap\_forms.scss" />
+    <Content Include="shape\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="shape\sass\bootstrap\_grid.scss" />
+    <Content Include="shape\sass\bootstrap\_input-groups.scss" />
+    <Content Include="shape\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="shape\sass\bootstrap\_labels.scss" />
+    <Content Include="shape\sass\bootstrap\_list-group.scss" />
+    <Content Include="shape\sass\bootstrap\_media.scss" />
+    <Content Include="shape\sass\bootstrap\_mixins.scss" />
+    <Content Include="shape\sass\bootstrap\_modals.scss" />
+    <Content Include="shape\sass\bootstrap\_navbar.scss" />
+    <Content Include="shape\sass\bootstrap\_navs.scss" />
+    <Content Include="shape\sass\bootstrap\_normalize.scss" />
+    <Content Include="shape\sass\bootstrap\_pager.scss" />
+    <Content Include="shape\sass\bootstrap\_pagination.scss" />
+    <Content Include="shape\sass\bootstrap\_panels.scss" />
+    <Content Include="shape\sass\bootstrap\_popovers.scss" />
+    <Content Include="shape\sass\bootstrap\_print.scss" />
+    <Content Include="shape\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="shape\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="shape\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="shape\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="shape\sass\bootstrap\_tables.scss" />
+    <Content Include="shape\sass\bootstrap\_theme.scss" />
+    <Content Include="shape\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="shape\sass\bootstrap\_tooltip.scss" />
+    <Content Include="shape\sass\bootstrap\_type.scss" />
+    <Content Include="shape\sass\bootstrap\_utilities.scss" />
+    <Content Include="shape\sass\bootstrap\_variables.scss" />
+    <Content Include="shape\sass\bootstrap\_wells.scss" />
+    <Content Include="shape\sass\style.scss" />
+    <Content Include="shape\sass\_bootstrap-compass.scss" />
+    <Content Include="shape\sass\_bootstrap-mincer.scss" />
+    <Content Include="shape\sass\_bootstrap-sprockets.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59509</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44353/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
